@@ -1,7 +1,14 @@
 import logo from "../../asserts/images/logo.png";
 import { Link } from "react-router-dom";
+import { Helmet } from 'react-helmet-async';
+
 function PageNotFound() {
   return (
+    <>
+    <Helmet>
+    <title>Page Not Found</title>
+    <meta name="robots" content="noindex" />
+    </Helmet>
     <div className="h-screen flex items-center justify-center ">
       <div>
         <div className="flex grid md:grid-cols-2 items-center">
@@ -34,6 +41,8 @@ function PageNotFound() {
         </div>
       </div>
     </div>
+    </>
+    
   );
 }
 

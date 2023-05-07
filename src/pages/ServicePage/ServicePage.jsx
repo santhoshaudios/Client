@@ -1,12 +1,23 @@
 import React, {useState} from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import TopNavBtn from '../../components/TopNavBtn/TopNavBtn'
+import { Helmet } from 'react-helmet-async';
+
 function ServicePage({data}) {
   const [selectedService, setSelectedService]=useState(data[0].Title)
   const [selectedServiceArray, setSelectedServiceArray]=useState(data[0].Description)
   
   return (
     <div>
+        <Helmet>
+    <title>Santhosh Audios Services </title>
+    <meta
+      name="keywords"
+      content="santhosh,audios,santhoshaudios,santhosh audios,Services,audio service,erode,audio system,home theatre,vehicle audio service ,knowmore"
+    />
+    <meta name="description" content="Santhosh Audios : Offical webpage santhoshaudios Erode" data-rn="true" />
+    <link rel="canonical" href="/service"/>
+    </Helmet>
     <Navbar floatingNav />
     <div className='pt-24 justify-center grid lg:grid-cols-6 md: grid-cols-3 snap-mandatory'>
       {data.map((ele,index)=>{

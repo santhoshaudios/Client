@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import Navbar from "../../components/Navbar/Navbar";
 import { ToastContainer, toast } from 'react-toastify';
 import axios from "axios";
+import { Helmet } from 'react-helmet-async';
 
 function Quotation() {
   var fields=[
@@ -76,7 +77,7 @@ function Quotation() {
     }
     await axios({
         method: 'post',
-        url: 'http://192.168.29.207:5000/message',
+        url: '/message',
         data:{name,email,phonenumber:mobile,materials:fields,totalBudget,isquotation:true},
       }).then(async(response) => {
         if(response.data.status){
@@ -96,6 +97,15 @@ function Quotation() {
   }
   return (
     <div>
+        <Helmet>
+          <title>Santhosh Audios Quotation </title>
+          <meta
+            name="keywords"
+            content="santhosh,audios,santhoshaudios,santhosh audios,Quation,prodect,audio service,erode,audio system,home theatre,vehicle audio service"
+          />
+          <meta name="description" content="Santhosh Audios : Offical webpage santhoshaudios Erode" data-rn="true" />
+          <link rel="canonical" href="/quotation"/>
+         </Helmet>
          <Navbar floatingNav />
          <div className='py-24'>
           <div className='mx-24 text-center my-10 font-bold text-3xl text-[#312e81]'>Quotation</div>

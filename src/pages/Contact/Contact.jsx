@@ -3,6 +3,7 @@ import TopNavBtn from "../../components/TopNavBtn/TopNavBtn";
 import { ToastContainer, toast } from 'react-toastify';
 import axios from "axios";
 import React,{useState} from "react";
+import { Helmet } from 'react-helmet-async';
 
 function Contact({data}) {
   const [name,setName]=useState('')
@@ -18,7 +19,7 @@ function Contact({data}) {
     }
     await axios({
         method: 'post',
-        url: 'http://192.168.163.146:5000/message',
+        url: '/message',
         data:{name,email,phonenumber:mobile,message},
       }).then(async(response) => {
         if(response.data.status){
@@ -38,6 +39,15 @@ function Contact({data}) {
   }
   return (
     <div>
+        <Helmet>
+    <title>Santhosh Audios Contact </title>
+    <meta
+      name="keywords"
+      content="santhosh,audios,santhoshaudios,santhosh audios,Contact number,phone number, location,erode , nearme"
+    />
+    <meta name="description" content="Santhosh Audios : Offical webpage santhoshaudios Erode" data-rn="true" />
+    <link rel="canonical" href="/contact"/>
+    </Helmet>
       <Navbar floatingNav />
       <ToastContainer className="mt-20"/>
       <iframe

@@ -3,6 +3,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import TopNavBtn from "../../components/TopNavBtn/TopNavBtn";
 import axios from "axios";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { Helmet } from 'react-helmet-async';
 
 
 function GalleryPage() {
@@ -29,6 +30,15 @@ function GalleryPage() {
 
   return (
     <div>
+        <Helmet>
+    <title>Santhosh Audios Gallerys </title>
+    <meta
+      name="keywords"
+      content="santhosh,audios,santhoshaudios,santhosh audios,galary,images,workdons,sample work,audio service,erode,audio system,home theatre,vehicle audio service"
+    />
+    <meta name="description" content="Santhosh Audios : Offical webpage santhoshaudios Erode" data-rn="true" />
+    <link rel="canonical" href="/gallery"/>
+    </Helmet>
       <Navbar floatingNav />
     {(images?.length===0 || images===undefined) &&
       <div className="flex justify-center items-center h-[40vh]">

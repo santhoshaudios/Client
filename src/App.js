@@ -5,8 +5,8 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import 'react-toastify/dist/ReactToastify.css';
 import data from './asserts/content/content.json'
-
-
+import axios from "axios";
+axios.defaults.baseURL = "https://api.santhoshaudios.in/"
 function App() {
   return (
     <div>

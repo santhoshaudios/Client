@@ -4,10 +4,20 @@ import TopNavBtn from "../../components/TopNavBtn/TopNavBtn";
 import Dealers from "../../components/Dealers/Dealers";
 import mission from "../../asserts/images/mission.gif"
 import vision from "../../asserts/images/vision.gif"
+import { Helmet } from 'react-helmet-async';
 
 function AboutPage({data}) {
   return (
     <div>
+        <Helmet>
+    <title>Santhosh Audios Aboutus </title>
+    <meta
+      name="keywords"
+      content="santhosh,audios,santhoshaudios,santhosh audios,about,audio service,erode,Mission Vision"
+    />
+    <meta name="description" content="Santhosh Audios : Offical webpage santhoshaudios Erode" data-rn="true" />
+    <link rel="canonical" href="/about"/>
+    </Helmet>
       <Navbar floatingNav />
       <div className="h-[80vh]">
         <img src={data.Image} alt="banner" className="h-[100%] w-[100%]" />

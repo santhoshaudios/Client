@@ -21,7 +21,7 @@ function ContactQuick({data}) {
 
     await axios({
         method: 'post',
-        url: 'http://192.168.163.146:5000/message',
+        url: '/message',
         data:{name,email,phonenumber:mobile,message},
       }).then(async(response) => {
         if(response.data.status){

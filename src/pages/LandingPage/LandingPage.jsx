@@ -7,7 +7,7 @@ import About from "../../components/About/About"
 import Navbar from "../../components/Navbar/Navbar";
 import { useState, useEffect } from "react";
 import Dealers from "../../components/Dealers/Dealers";
-
+import { Helmet } from 'react-helmet-async';
 
 
 function LandingPage({data}) {
@@ -25,6 +25,15 @@ function LandingPage({data}) {
   }, []);
   return (
     <div>
+    <Helmet>
+    <title>Santhosh Audios </title>
+    <meta
+      name="keywords"
+      content="santhosh,audios,santhoshaudios,santhosh audios,home,audio service,erode,audio system,home theatre,vehicle audio service"
+    />
+    <meta name="description" content="Santhosh Audios : Offical webpage santhoshaudios Erode" data-rn="true" />
+    <link rel="canonical" href="/"/>
+    </Helmet>
     {height>500 &&
       <Navbar floatingNav  />
     }
