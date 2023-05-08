@@ -10,7 +10,7 @@ axios.defaults.baseURL = "https://api.santhoshaudios.in/"
 function App() {
   return (
     <div>
-   <Router>
+   <Router basename={process.env.PUBLIC_URL}>
       <Navbar />
       <AllRoutes data={data} />
       <Footer data={data.Contact} />
