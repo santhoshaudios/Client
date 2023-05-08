@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import data from './asserts/content/content.json'
 import axios from "axios";
 axios.defaults.baseURL = "https://api.santhoshaudios.in/"
+console.log(process.env);
 function App() {
   return (
     <div>
