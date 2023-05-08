@@ -5,7 +5,7 @@ if (sessionStorage.getItem('visit') === null) {
 
 function updateCounter(type) {
 
-  fetch('http://127.0.0.1:3002/api?'+type) // Dynamic request with URL parameter
+  fetch('/api?'+type) // Dynamic request with URL parameter
     .then(res => res.json())
     .then(data => {
        // Display visits to user
