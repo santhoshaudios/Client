@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "./static/css/main.e857b205.css",
-    "main.js": "./static/js/main.187529ec.js",
-    "static/media/vision.gif": "./static/media/vision.5733cc8556eff13dfa46.gif",
-    "static/media/mission.gif": "./static/media/mission.e64123a12dbe18d8942c.gif",
-    "static/media/banner1.png": "./static/media/banner1.80927df303f6c2d5c28b.png",
-    "static/media/banner2.png": "./static/media/banner2.30d04f468e396335ce26.png",
-    "static/media/jbl.png": "./static/media/jbl.794dbdfb41c58cfeb1ce.png",
-    "static/media/logo.png": "./static/media/logo.7f94dcaee3901c43c546.png",
-    "static/media/Pioneer-logo.png": "./static/media/Pioneer-logo.7704ea0824410439d6c4.png",
-    "static/media/instagram.png": "./static/media/instagram.e719d8b29f452a16302d.png",
-    "static/media/infinity.png": "./static/media/infinity.c8fdc9c956df2d11ebeb.png",
-    "static/media/whatsapp.png": "./static/media/whatsapp.43a4918296128915afbb.png",
-    "static/media/harman.png": "./static/media/harman.3ba0c0fe9b3d8d4f5967.png",
-    "static/media/jvc_mobile.png": "./static/media/jvc_mobile.b7ffb7b9b80130e2d3f0.png",
-    "static/media/jvc.png": "./static/media/jvc.f499caf0cb889587e573.png",
-    "index.html": "./index.html",
-    "main.e857b205.css.map": "./static/css/main.e857b205.css.map",
-    "main.187529ec.js.map": "./static/js/main.187529ec.js.map"
+    "main.css": "/static/css/main.e857b205.css",
+    "main.js": "/static/js/main.3ea8ee63.js",
+    "static/media/vision.gif": "/static/media/vision.5733cc8556eff13dfa46.gif",
+    "static/media/mission.gif": "/static/media/mission.e64123a12dbe18d8942c.gif",
+    "static/media/banner1.png": "/static/media/banner1.80927df303f6c2d5c28b.png",
+    "static/media/banner2.png": "/static/media/banner2.30d04f468e396335ce26.png",
+    "static/media/jbl.png": "/static/media/jbl.794dbdfb41c58cfeb1ce.png",
+    "static/media/logo.png": "/static/media/logo.7f94dcaee3901c43c546.png",
+    "static/media/Pioneer-logo.png": "/static/media/Pioneer-logo.7704ea0824410439d6c4.png",
+    "static/media/instagram.png": "/static/media/instagram.e719d8b29f452a16302d.png",
+    "static/media/infinity.png": "/static/media/infinity.c8fdc9c956df2d11ebeb.png",
+    "static/media/whatsapp.png": "/static/media/whatsapp.43a4918296128915afbb.png",
+    "static/media/harman.png": "/static/media/harman.3ba0c0fe9b3d8d4f5967.png",
+    "static/media/jvc_mobile.png": "/static/media/jvc_mobile.b7ffb7b9b80130e2d3f0.png",
+    "static/media/jvc.png": "/static/media/jvc.f499caf0cb889587e573.png",
+    "index.html": "/index.html",
+    "main.e857b205.css.map": "/static/css/main.e857b205.css.map",
+    "main.3ea8ee63.js.map": "/static/js/main.3ea8ee63.js.map"
   },
   "entrypoints": [
     "static/css/main.e857b205.css",
-    "static/js/main.187529ec.js"
+    "static/js/main.3ea8ee63.js"
   ]
 }
