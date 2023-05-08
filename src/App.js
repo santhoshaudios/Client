@@ -11,7 +11,7 @@ console.log(process.env);
 function App() {
   return (
     <div>
-   <Router basename={process.env.PUBLIC_URL}>
+   <Router basename="https://santhoshaudios.in/">
       <Navbar />
       <AllRoutes data={data} />
       <Footer data={data.Contact} />
