@@ -16,7 +16,7 @@ function GalleryPage() {
     const getImage = async () => {
       await axios
         .get(
-          `https://script.google.com/macros/s/AKfycbzlqWK52qdKLZ1C1XOq5GXbvGYA5Dj99XRpwza8n6E6-gf80bgQoWqPzeaAdhpqMnh_/exec`
+          `https://script.google.com/macros/s/${process.env.REACT_APP_gskey}/exec`
         )
         .then((response) => {
           setImages(response.data.ids);
