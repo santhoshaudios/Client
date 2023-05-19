@@ -55,7 +55,7 @@ jobs:
     - name: Dedploy to gh-pages
       uses: cpina/github-action-push-to-another-repository@main
       env:
-        API_TOKEN_GITHUB: ${{ secrets.GITHUB_TOKEN }}
+        API_TOKEN_GITHUB: ${{ secrets.EXTERNAL_REPOSITORY_PERSONAL_ACCESS_TOKEN  }}
       with:
         # GitHub Action output files
         source-directory: ./build
