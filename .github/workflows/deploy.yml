@@ -47,22 +47,22 @@ jobs:
         name: production-files
         path: ./build
 
-#     - name: Deploy to gh-pages
-#       uses: peaceiris/actions-gh-pages@v3
-#       with:
-#         github_token: ${{ secrets.GITHUB_TOKEN }}
-#         publish_dir: ./build
-    - name: Dedploy to gh-pages
-      uses: cpina/github-action-push-to-another-repository@main
-      env:
-        API_TOKEN_GITHUB: ${{ secrets.EXTERNAL_REPOSITORY_PERSONAL_ACCESS_TOKEN  }}
+    - name: Deploy to gh-pages
+      uses: peaceiris/actions-gh-pages@v3
       with:
-        # GitHub Action output files
-        source-directory: ./build
-        destination-github-username: santhoshaudios
-        destination-repository-name: santhoshaudios
-        user-email: manibharathidct@gmail.com
-        # It defaults to `main`
-        target-branch: "gh-pages"
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build
+#     - name: Dedploy to gh-pages
+#       uses: cpina/github-action-push-to-another-repository@main
+#       env:
+#         API_TOKEN_GITHUB: ${{ secrets.EXTERNAL_REPOSITORY_PERSONAL_ACCESS_TOKEN  }}
+#       with:
+#         # GitHub Action output files
+#         source-directory: ./build
+#         destination-github-username: santhoshaudios
+#         destination-repository-name: santhoshaudios
+#         user-email: manibharathidct@gmail.com
+#         # It defaults to `main`
+#         target-branch: "gh-pages"
 
     
