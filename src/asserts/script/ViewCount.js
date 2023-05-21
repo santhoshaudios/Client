@@ -1,17 +1,18 @@
 if (sessionStorage.getItem('visit') === null) {
   // New visit and pageview
   updateCounter('type=visit-pageview');
-} 
+} else {
+  // Pageview
+  updateCounter('type=pageview');
+}
 
 function updateCounter(type) {
-
-  fetch('/api?'+type) // Dynamic request with URL parameter
+  fetch('https://api.santhoshaudios.in/viewcount?'+type) 
     .then(res => res.json())
     .then(data => {
-       // Display visits to user
-       console.log(data.count);
+      console.log("Page Count"+data.pageviews) 
+      console.log("Visit Count"+data.visits) 
     })
-
 }
 
 sessionStorage.setItem('visit', 'x');
