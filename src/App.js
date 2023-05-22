@@ -11,7 +11,6 @@ console.log(process.env);
 function App() {
   return (
     <div>
-
    <Router baseURL="https://santhoshaudios.in/">
       <Navbar />
       <AllRoutes data={data} />
