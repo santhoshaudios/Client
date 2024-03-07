@@ -81,7 +81,7 @@ function Gallery() {
           <div 
             onClick={() => target(index)}
             key={index} 
-            style={{backgroundImage:`url(https://drive.google.com/uc?id=${it})`}}
+            style={{backgroundImage:`url(https://drive.google.com/thumbnail?authuser=0&sz=w320&id=${it})`}}
             className='coverflow-item'>
           </div>
         )
