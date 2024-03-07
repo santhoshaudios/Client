@@ -70,14 +70,14 @@ function GalleryPage() {
         {category?.map((ele, index) => {
           return (
             <LazyLoadImage
-              src={`https://drive.google.com/uc?id=${ele}`}
+              src={`https://drive.google.com/thumbnail?authuser=0&sz=w320&id=${ele}`}
               // PlaceholderSrc={logo}
               alt="Image Alt"
               key={index}
               // effect="blur"
               className="cursor-pointer"
               onClick={()=>{
-                setSelectedImage(`https://drive.google.com/uc?id=${ele}`)
+                setSelectedImage(`https://drive.google.com/thumbnail?authuser=0&sz=w320&id=${ele}`)
                 setShowImage(true)
                 }
               }
